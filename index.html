@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>lesson3</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -21,22 +18,22 @@
                     <legend>Укажите ваши данные</legend>
                     <p>
                         <label for="name">Ваше Имя</label>
-                        <input type="text" placeholder="Введите ваше имя" required>
+                        <input id="name" type="text" placeholder="Введите ваше имя" required>
                     </p>
                     <p>
-                        <label for="name">Ваша Фамилия</label>
-                        <input type="text" placeholder="Введите вашу фамилию" required>
+                        <label for="surname">Ваша Фамилия</label>
+                        <input id="surname" type="text" placeholder="Введите вашу фамилию" required>
                     </p>
                     <p>
-                        <label for="name">Электронная почта</label>
+                        <label for="email">Электронная почта</label>
                         <input id="email" type="email" placeholder="Введите вашу почту" required>
                     </p>
                 </fieldset>
                 <fieldset>
                     <legend>Данные про ваш курс</legend>
                     <p>
-                        <label for="name">Выберите ваш курс</label>
-                        <select name="" id="" class="choise">
+                        <label for="courses">Выберите ваш курс</label>
+                        <select name="courses" id="courses" class="choise">
                             <option value="1" disabled>Выберите курс</option>
                             <option value="2" selected>Front-end</option>
                             <option value="3">SEO</option>
@@ -45,22 +42,28 @@
                         </select>
                     </p>
                     <p>
-                        <label for="name">Выполняете ли Вы домашние задания ?</label>
+                        <legend>Выполняете ли Вы домашние задания ?</legend>
+                        <label>
+                            <input type="radio" name="homework" value="one">
+                            <span>Да,выполняю</span>
+                        </label>
                         <br>
-                        <input type="radio" name="homework" value="one">
-                        <span>Да,выполняю</span>
-                        <br>
-                        <input type="radio" name="homework" value="one">
-                        <span>Нет,не выполняю</span>
+                        <label>
+                            <input type="radio" name="homework" value="two">
+                            <span>Нет,не выполняю</span>
+                        </label>
                     </p>
                     <p>
-                        <label for="name">Дополнительная информация :</label>
+                        <legend>Дополнительная информация :</legend>
+                        <label>
+                            <input type="checkbox" value="one">
+                            <span>Буду продолжать обучение</span>
+                        </label>
                         <br>
-                        <input type="checkbox" value="one">
-                        <span>Буду продолжать обучение</span>
-                        <br>
-                        <input type="checkbox" value="one">
-                        <span>Дополнительно изучаю английский</span>
+                        <label>
+                            <input type="checkbox" value="two">
+                            <span>Дополнительно занимаюсь английским</span>
+                        </label>
                     </p>
                 </fieldset>
                 <button type="submit">Отправить</button>
